@@ -15,7 +15,6 @@
     <link data-n-head="ssr" data-hid="gf-preconnect" rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
     <link data-n-head="ssr" data-hid="gf-preload" rel="preload" as="style"
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700">
-    <script data-n-head="ssr" data-hid="atropos" src="https://unpkg.com/atropos@1.0.1/atropos.js" defer></script>
     <script data-n-head="ssr" data-hid="gf-script">
         (function () {
             var l = document.createElement('link');
@@ -28,13 +27,6 @@
     <noscript data-n-head="ssr" data-hid="gf-noscript">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700">
     </noscript>
-    <link rel="preload" href="/_nuxt/b81806d.js" as="script">
-    <link rel="preload" href="/_nuxt/69769fe.js" as="script">
-    <link rel="preload" href="/_nuxt/1e9047d.js" as="script">
-    <link rel="preload" href="/_nuxt/b557c23.js" as="script">
-    <link rel="preload" href="/_nuxt/76ae459.js" as="script">
-    <link rel="preload" href="/_nuxt/907bbfb.js" as="script">
-    <link rel="preload" href="/_nuxt/e36a182.js" as="script">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <style data-vue-ssr-id="382a115c:0 f1c230d4:0 53f61d5f:0">
         /*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com*/
@@ -786,7 +778,7 @@ Add the correct display in Chrome and Safari.
         }
 
         .space-gradient {
-            background-image: radial-gradient(130.56% 91.6% at 50% 91.6%, #101243 38.02%, #000008 100%);
+            background-image: radial-gradient(130.56% 91.6% at 50% 91.6%, #9B44AC 38.02%, #324297 100%);
             ;
             background-size: cover;
             background-repeat: no-repeat;
@@ -2331,7 +2323,7 @@ Add the correct display in Chrome and Safari.
         }
 
         .pt-44 {
-            padding-top: 11rem;
+            padding-top: 12rem;
         }
 
         .pt-40 {
@@ -3296,106 +3288,6 @@ Add the correct display in Chrome and Safari.
             }
         }
 
-        .atropos {
-            position: relative;
-            display: block;
-            perspective: 1200px;
-            transform: translateZ(0)
-        }
-
-        .atropos-rotate-scroll-x,
-        .atropos-rotate-scroll-y,
-        .atropos-rotate-touch {
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none
-        }
-
-        .atropos-rotate-touch-scroll-y {
-            touch-action: pan-y
-        }
-
-        .atropos-rotate-touch-scroll-x {
-            touch-action: pan-x
-        }
-
-        .atropos-rotate-touch {
-            touch-action: none
-        }
-
-        .atropos-rotate,
-        .atropos-scale {
-            width: 100%;
-            height: 100%;
-            transform-style: preserve-3d;
-            transition-property: transform;
-            display: block
-        }
-
-        .atropos-highlight,
-        .atropos-shadow {
-            position: absolute;
-            pointer-events: none;
-            transition-property: transform, opacity;
-            display: block;
-            opacity: 0
-        }
-
-        .atropos-shadow {
-            z-index: -1;
-            background: #000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            filter: blur(30px)
-        }
-
-        .atropos-highlight {
-            left: -50%;
-            top: -50%;
-            width: 200%;
-            height: 200%;
-            background-image: radial-gradient(circle at 50%, hsla(0, 0%, 100%, .25), transparent 50%);
-            z-index: 0
-        }
-
-        .atropos-inner,
-        .atropos-rotate {
-            position: relative
-        }
-
-        .atropos-inner {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            transform-style: preserve-3d;
-            transform: translateZ(0);
-            display: block
-        }
-
-        .atropos-active {
-            z-index: 1
-        }
-
-        .atropos-active .atropos-shadow {
-            opacity: 1 !important
-        }
-
-        [data-atropos-offset] {
-            transition-property: transform
-        }
-
-        [data-atropos-opacity] {
-            transition-property: opacity
-        }
-
-        [data-atropos-offset][data-atropos-opacity] {
-            transition-property: transform, opacity
-        }
 
         .nuxt-progress {
             position: fixed;
@@ -3427,25 +3319,12 @@ Add the correct display in Chrome and Safari.
             <div class="page relative min-h-screen overflow-hidden">
                 <header class="absolute top-0 left-0 w-full z-50">
                     <div class="relative grid grid-cols-3 items-center mx-6 my-8">
-                        <div class="relative z-20 block lg:hidden">
-                            <button class="relative w-10 h-10 md:w-12 md:h-12 bg-blue-500 rounded focus:outline-none">
-                                <span class="sr-only">Open main menu</span>
-                                <div
-                                    class="block w-5 md:w-6 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                                    <span aria-hidden="true"
-                                        class="block absolute h-0.5 w-full bg-white transform transition duration-300 ease-in-out  -translate-y-1.5"></span>
-                                    <span aria-hidden="true"
-                                        class="block absolute h-0.5 w-full bg-white transform transition duration-300 ease-in-out"></span>
-                                    <span aria-hidden="true"
-                                        class="block absolute h-0.5 w-full bg-white transform transition duration-300 ease-in-out  translate-y-1.5"></span>
-                                </div>
-                            </button>
-                        </div>
+
                         <h1 class="logo justify-self-center col-start-2">
                             <a href="./index.html" aria-current="page" class="nuxt-link-exact-active nuxt-link-active">
                                 <img width="500" height="185"
-                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Zeppelin-CAT-Logo.svg/1280px-Zeppelin-CAT-Logo.svg.png"
-                                    alt="Nemuru Nekos" class="max-w-[120px] sm:max-w-[180px] md:max-w-[320px]">
+                                    src="https://cdn.discordapp.com/attachments/894013212528345161/936082050987987104/IMG_7394.jpg"
+                                    alt="Nemuru Nekos">
                             </a>
                         </h1>
                         <div class="flex items-center justify-end lg:ml-auto">
@@ -3511,11 +3390,11 @@ Add the correct display in Chrome and Safari.
                             </li>
                             <li
                                 class="flex flex-col items-center transition-all duration-300 text-white text-2xl lg:text-lg lg:flex-row lg:hover:navigation-hover">
-                                <a href="#team">Meet the team</a>
+                                <a href="#team">Comfy Cats</a>
                             </li>
                             <li
                                 class="flex flex-col items-center transition-all duration-300 text-white text-2xl lg:text-lg lg:flex-row lg:hover:navigation-hover">
-                                <a href="#faqs">FAQ's</a>
+                                <a href="#faqs">FAQs</a>
                             </li>
                             <li
                                 class="flex flex-col items-center transition-all duration-300 text-white text-2xl lg:text-lg lg:flex-row lg:hover:navigation-hover">
@@ -4178,11 +4057,11 @@ Add the correct display in Chrome and Safari.
                             class="hidden absolute top-48 lg:top-64 -right-36 2xl:right-0 animate-oscilate md:block">
                     </div>
                     <section class="hero relative pb-12 sm:pb-20 lg:pb-40">
-                        <div class="relative container flex justify-center mt-14 z-10">
-                            <div class="relative w-full atropos max-w-sm lg:max-w-md xl:max-w-lg mr-40">
-                                <div class="atropos-scale">
-                                    <div class="atropos-rotate">
-                                        <div class="atropos-inner rounded-xl" style="background-color:#ff83d1;">
+                        <div class="relative container flex justify-center mt-20 z-10">
+                            <div class="relative w-full  max-w-sm lg:max-w-md xl:max-w-lg mr-40">
+                                <div>
+                                    <div>
+                                        <div class=" rounded-xl" style="background-color:#ff83d1;">
                                             <video width="512" height="512" autoplay="autoplay" loop="loop"
                                                 muted="muted" playsinline="" style="aspect-ratio:1 / 1;">
                                                 <source
@@ -4198,7 +4077,8 @@ Add the correct display in Chrome and Safari.
                             </div>
 
                             <div class="custom-number-input h-10 w-32" style="margin-top:15rem;margin-left:-5rem">
-                                <label for="custom-input-number" class="w-full text-pink-700 text-sm font-semibold">Mint
+                                <label for="custom-input-number"
+                                    class="w-full text-black-700 text-sm font-semibold">Mint
                                     Number
                                 </label>
                                 <div class="flex flex-row h-10 w-full rounded-lg relative bg-transparent mt-1">
@@ -4217,11 +4097,14 @@ Add the correct display in Chrome and Safari.
                                 </div>
                             </div>
                             <div class="position-absolute">
+                                <div class="py-3 text-center"
+                                    style="margin-top:20rem;margin-left:-8.7rem;position:relative">Total Price: <span
+                                        id="mint_price">0.07</span> ETH
+                                </div>
                                 <button type="button"
                                     class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4
                                     focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-2xl px-5 py-3 text-center"
-                                    style="margin-top:20rem;margin-left:-8.7rem;position:relative">Mint
-                                    Now!</button>
+                                    style="margin-left:-8.7rem;position:relative">Mint Now!</button>
 
                             </div>
                     </section>
@@ -4246,13 +4129,13 @@ Add the correct display in Chrome and Safari.
                         <div class="container relative z-20 xl:max-w-[1170px] text-blue-500">
                             <h2
                                 class="text-3xl text-blue-500 md:text-5xl lg:text-6xl mb-14 text-2xl md:text-3xl lg:text-5xl">
-                                Nemuru Nekos Sneak Peeks~!
+                                Sneak Peeks~
                             </h2>
                             <div class="grid grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-6">
-                                <div class="relative w-full atropos max-w-sm lg:max-w-md xl:max-w-lg">
-                                    <div class="atropos-scale">
-                                        <div class="atropos-rotate">
-                                            <div class="atropos-inner rounded-xl" style="background-color:transparent;">
+                                <div class="relative w-full  max-w-sm lg:max-w-md xl:max-w-lg">
+                                    <div>
+                                        <div>
+                                            <div class=" rounded-xl" style="background-color:transparent;">
                                                 <picture>
                                                     <source
                                                         srcset="https://media.discordapp.net/attachments/929998026775339009/933591600079187978/IMG_7357.jpg?width=504&height=501"
@@ -4265,10 +4148,10 @@ Add the correct display in Chrome and Safari.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="relative w-full atropos max-w-sm lg:max-w-md xl:max-w-lg">
-                                    <div class="atropos-scale">
-                                        <div class="atropos-rotate">
-                                            <div class="atropos-inner rounded-xl" style="background-color:transparent;">
+                                <div class="relative w-full  max-w-sm lg:max-w-md xl:max-w-lg">
+                                    <div>
+                                        <div>
+                                            <div class=" rounded-xl" style="background-color:transparent;">
                                                 <picture>
                                                     <source
                                                         srcset="https://media.discordapp.net/attachments/929998026775339009/933591600079187978/IMG_7357.jpg?width=504&height=501"
@@ -4281,10 +4164,10 @@ Add the correct display in Chrome and Safari.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="relative w-full atropos max-w-sm lg:max-w-md xl:max-w-lg">
-                                    <div class="atropos-scale">
-                                        <div class="atropos-rotate">
-                                            <div class="atropos-inner rounded-xl" style="background-color:transparent;">
+                                <div class="relative w-full  max-w-sm lg:max-w-md xl:max-w-lg">
+                                    <div>
+                                        <div>
+                                            <div class=" rounded-xl" style="background-color:transparent;">
                                                 <picture>
                                                     <source
                                                         srcset="https://media.discordapp.net/attachments/929998026775339009/933591600079187978/IMG_7357.jpg?width=504&height=501"
@@ -4297,10 +4180,10 @@ Add the correct display in Chrome and Safari.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="relative w-full atropos max-w-sm lg:max-w-md xl:max-w-lg">
-                                    <div class="atropos-scale">
-                                        <div class="atropos-rotate">
-                                            <div class="atropos-inner rounded-xl" style="background-color:transparent;">
+                                <div class="relative w-full  max-w-sm lg:max-w-md xl:max-w-lg">
+                                    <div>
+                                        <div>
+                                            <div class=" rounded-xl" style="background-color:transparent;">
                                                 <picture>
                                                     <source
                                                         srcset="https://media.discordapp.net/attachments/929998026775339009/933591600079187978/IMG_7357.jpg?width=504&height=501"
@@ -4313,10 +4196,10 @@ Add the correct display in Chrome and Safari.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="relative w-full atropos max-w-sm lg:max-w-md xl:max-w-lg">
-                                    <div class="atropos-scale">
-                                        <div class="atropos-rotate">
-                                            <div class="atropos-inner rounded-xl" style="background-color:transparent;">
+                                <div class="relative w-full  max-w-sm lg:max-w-md xl:max-w-lg">
+                                    <div>
+                                        <div>
+                                            <div class=" rounded-xl" style="background-color:transparent;">
                                                 <picture>
                                                     <source
                                                         srcset="https://media.discordapp.net/attachments/929998026775339009/933591600079187978/IMG_7357.jpg?width=504&height=501"
@@ -4329,10 +4212,10 @@ Add the correct display in Chrome and Safari.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="relative w-full atropos max-w-sm lg:max-w-md xl:max-w-lg">
-                                    <div class="atropos-scale">
-                                        <div class="atropos-rotate">
-                                            <div class="atropos-inner rounded-xl" style="background-color:transparent;">
+                                <div class="relative w-full  max-w-sm lg:max-w-md xl:max-w-lg">
+                                    <div>
+                                        <div>
+                                            <div class=" rounded-xl" style="background-color:transparent;">
                                                 <picture>
                                                     <source
                                                         srcset="https://media.discordapp.net/attachments/929998026775339009/933591600079187978/IMG_7357.jpg?width=504&height=501"
@@ -4349,7 +4232,7 @@ Add the correct display in Chrome and Safari.
                         </div>
                     </section>
                     <section id="roadmap"
-                        class="roadmap -scroll-margin-10 lg:-scroll-margin-20 bg-roadmap-grad relative pt-40 pb-40 md:pb-60 lg:pb-96 z-10">
+                        class="roadmap -scroll-margin-10 lg:-scroll-margin-20 bg-roadmap-grad relative pt-40 pb-40 z-10">
                         <img width="387" height="387"
                             src="https://img1.pnghut.com/22/22/6/4f9RdJ8su2/small-to-medium-sized-cats-mammal-head-black-and-white-whiskers.jpg"
                             alt="Moon" loading="lazy" decoding="async"
@@ -4762,9 +4645,9 @@ Add the correct display in Chrome and Safari.
                                     </picture>
                                 </div>
                                 <div class="lg:col-span-2 mb-20 lg:mt-20">
-                                    <p
-                                        class="text-center text-2xl font-bold text-pink leading-loose tracking-wide md:text-xl lg:text-4xl">
-                                        The metaverse is ever expanding,<br>and so will Nemuru Nekos plans and goals!
+                                    <p class="text-center text-2xl font-bold leading-loose tracking-wide md:text-xl lg:text-4xl"
+                                        style="color:rgb(163, 93, 228)">
+                                        nemuru nemuru~ <br> more cool things coming!
 
                                     </p>
                                 </div>
@@ -4775,16 +4658,15 @@ Add the correct display in Chrome and Safari.
                         <div class="container xl:max-w-[1170px] pt-20 mt-20 text-blue-500">
                             <h2
                                 class="text-3xl text-blue-500 md:text-5xl lg:text-6xl -mt-16 lg:-mt-48 mb-8 leading-normal md:leading-normal lg:leading-normal">
-                                Meet The Team...
+                                Comfy Cats!
                             </h2>
                             <div
                                 class="grid grid-cols-4 lg:grid-cols-6 gap-y-10 gap-x-6 text-center sm:text-left text-blue-500">
                                 <div class="col-span-2">
-                                    <div class="relative w-full atropos max-w-[770px]">
-                                        <div class="atropos-scale">
-                                            <div class="atropos-rotate">
-                                                <div class="atropos-inner rounded-xl"
-                                                    style="background-color:transparent;">
+                                    <div class="relative w-full  max-w-[770px]">
+                                        <div>
+                                            <div>
+                                                <div class=" rounded-xl" style="background-color:transparent;">
                                                     <picture>
                                                         <source
                                                             srcset="https://azuki-builder.s3.amazonaws.com/images/623d1f8a-0315-436d-959b-621f02bae593.png"
@@ -4816,11 +4698,10 @@ Add the correct display in Chrome and Safari.
                                     </div>
                                 </div>
                                 <div class="col-span-2">
-                                    <div class="relative w-full atropos max-w-[770px]">
-                                        <div class="atropos-scale">
-                                            <div class="atropos-rotate">
-                                                <div class="atropos-inner rounded-xl"
-                                                    style="background-color:transparent;">
+                                    <div class="relative w-full  max-w-[770px]">
+                                        <div>
+                                            <div>
+                                                <div class=" rounded-xl" style="background-color:transparent;">
                                                     <picture>
                                                         <source
                                                             srcset="https://azuki-builder.s3.amazonaws.com/images/623d1f8a-0315-436d-959b-621f02bae593.png"
@@ -4851,11 +4732,10 @@ Add the correct display in Chrome and Safari.
                                     </div>
                                 </div>
                                 <div class="col-span-2">
-                                    <div class="relative w-full atropos max-w-[770px]">
-                                        <div class="atropos-scale">
-                                            <div class="atropos-rotate">
-                                                <div class="atropos-inner rounded-xl"
-                                                    style="background-color:transparent;">
+                                    <div class="relative w-full  max-w-[770px]">
+                                        <div>
+                                            <div>
+                                                <div class=" rounded-xl" style="background-color:transparent;">
                                                     <picture>
                                                         <source
                                                             srcset="https://azuki-builder.s3.amazonaws.com/images/623d1f8a-0315-436d-959b-621f02bae593.png"
@@ -4886,11 +4766,10 @@ Add the correct display in Chrome and Safari.
                                     </div>
                                 </div>
                                 <div class="col-span-2 lg:col-start-2">
-                                    <div class="relative w-full atropos max-w-[770px]">
-                                        <div class="atropos-scale">
-                                            <div class="atropos-rotate">
-                                                <div class="atropos-inner rounded-xl"
-                                                    style="background-color:transparent;">
+                                    <div class="relative w-full  max-w-[770px]">
+                                        <div>
+                                            <div>
+                                                <div class=" rounded-xl" style="background-color:transparent;">
                                                     <picture>
                                                         <source
                                                             srcset="https://media.discordapp.net/attachments/929998026775339009/933591600079187978/IMG_7357.jpg?width=504&height=501"
@@ -4921,11 +4800,10 @@ Add the correct display in Chrome and Safari.
                                     </div>
                                 </div>
                                 <div class="col-span-2 col-start-2 lg:col-start-auto">
-                                    <div class="relative w-full atropos max-w-[770px]">
-                                        <div class="atropos-scale">
-                                            <div class="atropos-rotate">
-                                                <div class="atropos-inner rounded-xl"
-                                                    style="background-color:transparent;">
+                                    <div class="relative w-full  max-w-[770px]">
+                                        <div>
+                                            <div>
+                                                <div class=" rounded-xl" style="background-color:transparent;">
                                                     <picture>
                                                         <source
                                                             srcset="https://media.discordapp.net/attachments/929998026775339009/933591600079187978/IMG_7357.jpg?width=504&height=501"
@@ -4960,7 +4838,7 @@ Add the correct display in Chrome and Safari.
                     </section>
                     <section id="faqs" class="relative py-20 bg-gray-100">
                         <div class="container xl:max-w-[1170px]">
-                            <h2 class="text-3xl text-blue-500 md:text-5xl lg:text-6xl mb-8 lg:mb-16">FAQ'S </h2>
+                            <h2 class="text-3xl text-blue-500 md:text-5xl lg:text-6xl mb-8 lg:mb-16">FAQs </h2>
                             <div class="faq-item text-blue-500">
                                 <div
                                     class="question flex items-center justify-between cursor-pointer space-x-8 select-none">
@@ -5123,10 +5001,7 @@ Add the correct display in Chrome and Safari.
                         </div>
                     </section>
                 </div>
-                <footer class="relative p-8 bg-blue-900 flex flex-col md:flex-row items-center justify-between z-10">
-                    <img width="698" height="185"
-                        src="https://media.discordapp.net/attachments/929998026775339009/933591600079187978/IMG_7357.jpg?width=504&height=501"
-                        alt="Nemuru Nekos" class="max-w-[180px]">
+                <footer class="relative p-8 bg-blue-900 flex flex-col md:flex-row items-center justify-between z-10">\
                     <div class="flex flex-col-reverse md:flex-row items-center space-y-9 md:space-y-0">
                         <ul class="flex text-white space-x-6 xl:space-x-9 mt-9 md:mt-0 md:mr-6 xl:mr-9">
                             <li>
@@ -5178,12 +5053,15 @@ Add the correct display in Chrome and Safari.
             popup.classList.toggle("show");
         }
         let mintcount = document.getElementById("mintcount")
+        let mint_price = document.getElementById("mint_price")
         let count = 1
         function decrement() {
             if (count > 1) {
                 count = count - 1
             }
             mintcount.innerText = count
+            mint_price.innerText = Math.round(count * 0.07 * 100) / 100
+
         }
         function getvalue(e) {
             const btn = e.target.parentNode.parentElement.querySelector(
@@ -5197,6 +5075,7 @@ Add the correct display in Chrome and Safari.
                 count = count + 1
             }
             mintcount.innerText = count
+            mint_price.innerText = Math.round(count * 0.07 * 100) / 100
         }
 
         const decrementButtons = document.querySelectorAll(
