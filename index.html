@@ -829,23 +829,12 @@ Add the correct display in Chrome and Safari.
         }
 
         .bg-roadmap-grad {
-            background-image: url(/_nuxt/img/belt-alt.07d7a98.png), url(/_nuxt/img/belt.0e237ab.png), linear-gradient(180deg, #fcf17f, #febc69 20%, #f56c6d 40%, #3337ae 60%, #000008 80%);
+            background-image: linear-gradient(180deg, #effc7f, #febc69 20%, #f56c6d 40%, #3337ae 60%, #210125 80%);
             background-repeat: no-repeat, no-repeat, no-repeat;
             background-size: 100% auto, 100% auto, auto;
             background-position: 0 11%, 0 70%, 0 0
         }
 
-        .roadmap:before {
-            content: "";
-            position: absolute;
-            top: 0px;
-            height: 100%;
-            width: 100%;
-            background-image: url(/_nuxt/e6a927b9f7daf0c93f7659912b1cb288.svg);
-            background-size: contain;
-            background-position: top;
-            background-repeat: no-repeat
-        }
 
         @media (min-width: 1940px) {
             .roadmap:before {
@@ -1481,6 +1470,11 @@ Add the correct display in Chrome and Safari.
         .-mx-8 {
             margin-left: -2rem;
             margin-right: -2rem;
+        }
+
+        .mx-10 {
+            margin-left: 20rem;
+            margin-right: 20rem;
         }
 
         .mx-1 {
@@ -4654,7 +4648,8 @@ Add the correct display in Chrome and Safari.
                             </div>
                         </div>
                     </section>
-                    <section id="team" class="scroll-margin-5 lg:scroll-margin-10 relative py-20 bg-white z-10">
+                    <section id="team" class="scroll-margin-5 lg:scroll-margin-10 relative py-20 z-10"
+                        style="background-color:#E9E5F3">
                         <div class="container xl:max-w-[1170px] pt-20 mt-20 text-blue-500">
                             <h2
                                 class="text-3xl text-blue-500 md:text-5xl lg:text-6xl -mt-16 lg:-mt-48 mb-8 leading-normal md:leading-normal lg:leading-normal">
@@ -4836,172 +4831,81 @@ Add the correct display in Chrome and Safari.
                             </div>
                         </div>
                     </section>
-                    <section id="faqs" class="relative py-20 bg-gray-100">
-                        <div class="container xl:max-w-[1170px]">
-                            <h2 class="text-3xl text-blue-500 md:text-5xl lg:text-6xl mb-8 lg:mb-16">FAQs </h2>
-                            <div class="faq-item text-blue-500">
-                                <div
-                                    class="question flex items-center justify-between cursor-pointer space-x-8 select-none">
-                                    <h3 class="my-0 py-10 text-xl md:text-2xl font-bold flex-1">When are the Ape
-                                        Invaders launching?</h3>
-                                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="transform transition-transform w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8 flex-0">
-                                        <path d="M14.5 2v25M2 14.5h25" stroke="#1A1E3A" stroke-width="4"
-                                            stroke-linecap="square"></path>
-                                    </svg>
-                                </div>
-                                <div
-                                    class="answer leading-relaxed overflow-hidden transition-all max-h-0 duration-500 ease-in-out">
-                                    <div class="pb-12">
-                                        <p>Currently we are aiming for a Mid January mint. Our team is working
-                                            hard to ensure that everything will be ready and live at launch. We
-                                            want to get you earning $Stardust right away!
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="faq-item text-blue-500">
-                                <div
-                                    class="question flex items-center justify-between cursor-pointer space-x-8 select-none">
-                                    <h3 class="my-0 py-10 text-xl md:text-2xl font-bold flex-1">What blockchain will Ape
-                                        Invaders be on?</h3>
-                                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="transform transition-transform w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8 flex-0">
-                                        <path d="M14.5 2v25M2 14.5h25" stroke="#1A1E3A" stroke-width="4"
-                                            stroke-linecap="square"></path>
-                                    </svg>
-                                </div>
-                                <div
-                                    class="answer leading-relaxed overflow-hidden transition-all max-h-0 duration-500 ease-in-out">
-                                    <div class="pb-12">
-                                        <p>We will be on the Ethereum Blockchain, and our $Stardust Token will
-                                            be ERC-20.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="faq-item text-blue-500">
-                                <div
-                                    class="question flex items-center justify-between cursor-pointer space-x-8 select-none">
-                                    <h3 class="my-0 py-10 text-xl md:text-2xl font-bold flex-1">What is the minting
-                                        price?</h3>
-                                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="transform transition-transform w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8 flex-0">
-                                        <path d="M14.5 2v25M2 14.5h25" stroke="#1A1E3A" stroke-width="4"
-                                            stroke-linecap="square"></path>
-                                    </svg>
-                                </div>
-                                <div
-                                    class="answer leading-relaxed overflow-hidden transition-all max-h-0 duration-500 ease-in-out">
-                                    <div class="pb-12">
-                                        <p>0.055 ETH</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="faq-item text-blue-500">
-                                <div
-                                    class="question flex items-center justify-between cursor-pointer space-x-8 select-none">
-                                    <h3 class="my-0 py-10 text-xl md:text-2xl font-bold flex-1">How many can be minted
-                                        per wallet?</h3>
-                                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="transform transition-transform w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8 flex-0">
-                                        <path d="M14.5 2v25M2 14.5h25" stroke="#1A1E3A" stroke-width="4"
-                                            stroke-linecap="square"></path>
-                                    </svg>
-                                </div>
-                                <div
-                                    class="answer leading-relaxed overflow-hidden transition-all max-h-0 duration-500 ease-in-out">
-                                    <div class="pb-12">
-                                        <p>Up to 5 Nemuru Nekos per wallet.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="faq-item text-blue-500">
-                                <div
-                                    class="question flex items-center justify-between cursor-pointer space-x-8 select-none">
-                                    <h3 class="my-0 py-10 text-xl md:text-2xl font-bold flex-1">When is the game going
-                                        to be available?</h3>
-                                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="transform transition-transform w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8 flex-0">
-                                        <path d="M14.5 2v25M2 14.5h25" stroke="#1A1E3A" stroke-width="4"
-                                            stroke-linecap="square"></path>
-                                    </svg>
-                                </div>
-                                <div
-                                    class="answer leading-relaxed overflow-hidden transition-all max-h-0 duration-500 ease-in-out">
-                                    <div class="pb-12">
-                                        <p>The game will be playable after metadata is revealed, shortly after
-                                            public minting.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="faq-item text-blue-500">
-                                <div
-                                    class="question flex items-center justify-between cursor-pointer space-x-8 select-none">
-                                    <h3 class="my-0 py-10 text-xl md:text-2xl font-bold flex-1">Is there any utility?
+                    <section id="faqs" class="relative pt-20" style="background-color:#f5f9ff">
+                        <div class="container-fluid text-center">
+                            <h2 class="text-3xl text-blue-500 md:text-5xl lg:text-6xl mb-8 lg:mb-16">
+                                *yawn* questions~</h2>
+                            <div class="row" style="background-color:#fff6f6">
+
+                                <div class="col">
+                                    <h3 class="my-0 py-10 text-lg md:text-2xl flex-1">When and where are we
+                                        launching?
                                     </h3>
-                                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="transform transition-transform w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8 flex-0">
-                                        <path d="M14.5 2v25M2 14.5h25" stroke="#1A1E3A" stroke-width="4"
-                                            stroke-linecap="square"></path>
-                                    </svg>
-                                </div>
-                                <div
-                                    class="answer leading-relaxed overflow-hidden transition-all max-h-0 duration-500 ease-in-out">
-                                    <div class="pb-12">
-                                        <p>
-                                            Yes! Loads of it infact, starting off each Nemuru Neko will be able
-                                            to invade planets in return for rewards. This will be initated by
-                                            Staking. Each Nemuru Neko that is staked on a planet will return
-                                            land. The more land you conquer (by staking longer), the more
-                                            $Stardust you are rewarded.
-                                            <br>
-                                            <br>Not only that, specific planets will also have bonus rewards which
-                                            can include but are not limited to Airdrops, Physical Merch, Ape
-                                            Invaders, and more!
-
-                                        </p>
+                                    <div class="row pb-10">
+                                        <div class="col content-justify-center mx-10">
+                                            Coming Soon! Nemuru Nekos will be stealth launching in a blockchain near you
+                                            (Ethereum) with gas optimisation features of the ERC-721A token to deliver
+                                            sleepy happiness wherever you are! $BULLSHIT will be an ERC-20 token soon
+                                            released to reward all holders and stakers~
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="faq-item text-blue-500">
-                                <div
-                                    class="question flex items-center justify-between cursor-pointer space-x-8 select-none">
-                                    <h3 class="my-0 py-10 text-xl md:text-2xl font-bold flex-1">Will $Stardust have any
-                                        value?</h3>
-                                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="transform transition-transform w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8 flex-0">
-                                        <path d="M14.5 2v25M2 14.5h25" stroke="#1A1E3A" stroke-width="4"
-                                            stroke-linecap="square"></path>
-                                    </svg>
-                                </div>
-                                <div
-                                    class="answer leading-relaxed overflow-hidden transition-all max-h-0 duration-500 ease-in-out">
-                                    <div class="pb-12">
-                                        <p>
-                                            $Stardust will be the currency of Nemuru Nekos. Staking your Ape
-                                            Invader will earn an amount of $Stardust per day, you will also earn
-                                            $Stardust based on percentage of land claimed during Ape Invasions.
-                                            <br>
-                                            <br>1 $Stardust = 1 $Stardust, although a community memeber is free to
-                                            setup a liquidity pool if they choose to.
+                            <div class="row" style="background-color:#fff7ef">
 
-                                        </p>
+                                <div class="col">
+                                    <h3 class="my-0 py-10 text-lg md:text-2xl flex-1">Minting
+                                    </h3>
+                                    <div class="row pb-10">
+                                        <div class="col content-justify-center">
+                                            The minting price will be $bullshit and you will be able to mint $bullshit
+                                            per wallet!
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="row" style="background-color:#fffff1">
+
+                                <div class="col">
+                                    <h3 class="my-0 py-10 text-lg md:text-2xl flex-1">When will staking be available?
+                                    </h3>
+                                    <div class="row pb-10">
+                                        <div class="col justify-content-center">
+                                            A week from now~ or some bullshit idk
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="background-color:#f7fff3">
+
+                                <div class="col">
+                                    <h3 class="my-0 py-10 text-lg md:text-2xl flex-1">What is the utility of Nemuru
+                                        Neko
+                                        and $bullshit?
+                                    </h3>
+                                    <div class="row pb-10">
+                                        <div class="col-4 mx-10">
+                                            Apart from the insanely high quality art, there will also be the ability
+                                            to
+                                            trade in burn your $bullshit tokens for future benefits, as well as
+                                            staking
+                                            your cute Nemuru Nekos for $bullshit that accumulates exponentially over
+                                            time as you hold it for longer! We will also have more drops that
+                                            holding a
+                                            genesis neko will automatically whitelist you for, and many many more
+                                            things~ check back to our roadmap often to find out more!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
                         </div>
                     </section>
                 </div>
-                <footer class="relative p-8 bg-blue-900 flex flex-col md:flex-row items-center justify-between z-10">\
+                <footer class="relative p-8 flex flex-col md:flex-row items-center justify-between z-10"
+                    style="background-color:#C3B1E1;color:#C3B1E1">\
                     <div class="flex flex-col-reverse md:flex-row items-center space-y-9 md:space-y-0">
                         <ul class="flex text-white space-x-6 xl:space-x-9 mt-9 md:mt-0 md:mr-6 xl:mr-9">
                             <li>
